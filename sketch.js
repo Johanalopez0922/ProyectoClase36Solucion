@@ -13,7 +13,7 @@ function preload(){
 //Function to set initial environment
 function setup() {
   database=firebase.database();
-  createCanvas(1780,830);
+  createCanvas(1500,700);
 
   balloon=createSprite(250,650,150,150);
   balloon.addAnimation("hotAirBalloon",balloonImage1);
