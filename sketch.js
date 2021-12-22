@@ -10,7 +10,7 @@ function preload(){
    "Images/HotAirBallon-02.png","Images/HotAirBallon-03.png","Images/HotAirBallon-03.png","Images/HotAirBallon-03.png");
   }
 
-//Function to set initial environment
+// Función para configurar el ambiente inicial
 function setup() {
   database=firebase.database();
   createCanvas(1500,700);
@@ -24,7 +24,7 @@ function setup() {
   textSize(20); 
 }
 
-// function to display UI
+// Función para mostrar UI
 function draw() {
   background(bg);
 
@@ -51,7 +51,7 @@ function draw() {
   fill(0);
   stroke("white");
   textSize(25);
-  text("**Use arrow keys to move Hot Air Balloon!",40,40);
+  text("**¡Usa las flechas del teclado para mover al globo aerostático!",40,40);
 }
 
 
@@ -70,5 +70,5 @@ function readHeight(data){
 }
 
 function showError(){
-  console.log("Error in writing to the database");
+  console.log("Error al escribir en la base de datos");
 }
